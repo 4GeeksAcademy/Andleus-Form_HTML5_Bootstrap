@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!-- Done in two different ways -->
+
+    <div class="container-fluid">
+
+
+        <div class="card mt-5 mb-5" style="border-radius: 0%;">
+            <div class="card-header" >
+                <div class="h3 px-2 m-2 my-0">Payment form example</div>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <form class="p-4">
+                        <div class="row mb-3">
+                            <div class="alert alert-danger">Some fields are missing</div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-5">
+                                <div class="form-group">
+                                    <label for="card">Card #</label>
+                                    <input type="text" id="card" placeholder="XXXXXXXXXXXXXXXXXXXXXXXXXXXX" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <label for="cvc">CVC #</label>
+                                    <input type="text" id="cvc" placeholder="0000" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label for="amount">Amount SYMBOL MISSING</label>
+                                    <input type="text" id="amount" placeholder="Amount" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="fName">First Name</label>
+                                    <input type="text" id="fName" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="lName">Last Name</label>
+                                    <input type="text" id="lName" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <label for="state">State</label>
+                                    <select id="state" class="form-select" aria-label="Default select example">
+                                        <option value="">Pick a state</option>
+                                        <option value="1">jelou</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <label for="postal">Postal Code</label>
+                                    <input type="text" id="postal" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="files">File</label>
+                                    <input type="file" class="form-control" id="files">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="today">Date</label>
+                                    <input type="date" class="form-control" id="today">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>We accept:<br/>
+                                        <div class="bg-secondary rounded-1 ps-3 p-2">
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label" for="paysT1"><i class="fa-brands fa-cc-mastercard" style="color: #ffffff;"></i></label>
+                                                <input type="radio" id="paysT1" name="payType" class="form-check-input">
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label" for="paysT2"><i class="fa-brands fa-cc-visa" style="color: #ffffff;"></i></label>
+                                                <input type="radio" id="paysT2" name="payType" class="form-check-input">
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label" for="paysT3"><i class="fa-brands fa-cc-paypal" style="color: #ffffff;"></i></label>
+                                                <input type="radio" id="paysT3" name="payType" class="form-check-input">
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label class="form-check-label"for="paysT4"><i class="fa-brands fa-cc-amex" style="color: #ffffff;"></i></label>
+                                                <input type="radio" id="paysT4" name="payType" class="form-check-input">
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="texta">Message</label>
+                                    <textarea type="text" id="texta" class="form-control" row mb-3s="5"></textarea>
+                                    <p class="text-muted fw-light" for="texta">Add any notes here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+            <div class="card-header d-flex justify-content-end">
+
+                <button type="button" class="btn btn-secondary">Cancel</button>
+                <button type="button" class="btn btn-primary ms-2">Send</button>
+            
+
+            </div>
+        </div>
+
+
+
+
+        <table class="table table-bordered mb-5">
+            <thead>
+                <tr class="table-secondary">
+                    <td>
+                        <div class="h3 px-2 m-2 my-0">Payment form example</div>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        
+                        <form class="p-4">
+                            <div class="row mb-3">
+                                <div class="alert alert-danger">Some fields are missing</div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-5">
+                                    <div class="form-group">
+                                        <label for="card">Card #</label>
+                                        <input type="text" id="card" placeholder="XXXXXXXXXXXXXXXXXXXXXXXXXXXX" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="cvc">CVC #</label>
+                                        <input type="text" id="cvc" placeholder="0000" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="amount">Amount SYMBOL MISSING</label>
+                                        <input type="text" id="amount" placeholder="Amount" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="fName">First Name</label>
+                                        <input type="text" id="fName" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="lName">Last Name</label>
+                                        <input type="text" id="lName" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input type="text" id="city" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="state">State</label>
+                                        <select id="state" class="form-select" aria-label="Default select example">
+                                            <option value="">Pick a state</option>
+                                            <option value="1">jelou</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="postal">Postal Code</label>
+                                        <input type="text" id="postal" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="files">File</label>
+                                        <input type="file" class="form-control" id="files">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="today">Date</label>
+                                        <input type="date" class="form-control" id="today">
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label>We accept:<br/>
+                                            <div class="bg-secondary rounded-1 ps-3 p-2">
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label" for="paysT1"><i class="fa-brands fa-cc-mastercard" style="color: #ffffff;"></i></label>
+                                                    <input type="radio" id="paysT1" name="payType" class="form-check-input">
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label" for="paysT2"><i class="fa-brands fa-cc-visa" style="color: #ffffff;"></i></label>
+                                                    <input type="radio" id="paysT2" name="payType" class="form-check-input">
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label" for="paysT3"><i class="fa-brands fa-cc-paypal" style="color: #ffffff;"></i></label>
+                                                    <input type="radio" id="paysT3" name="payType" class="form-check-input">
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label"for="paysT4"><i class="fa-brands fa-cc-amex" style="color: #ffffff;"></i></label>
+                                                    <input type="radio" id="paysT4" name="payType" class="form-check-input">
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="texta">Message</label>
+                                        <textarea type="text" id="texta" class="form-control" row mb-3s="5"></textarea>
+                                        <p class="text-muted fw-light" for="texta">Add any notes here.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+                <tr class="table-secondary">
+                    <td class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-secondary">Cancel</button>
+                        <button type="button" class="btn btn-primary ms-2">Send</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
